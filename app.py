@@ -6,12 +6,13 @@ app = Flask(__name__)
 PROFILE = {
     "name": "Shivam Kachawar",
     "role": "Software Engineer · Backend & Systems",
-    "location": "Bengaluru, India",
+    "location": "Bangalore, Karnataka, India",
     "email": "shivamkachawar@gmail.com",
     "phone": "+91 91468 37144",
     "summary": (
-        "I build reliable backend systems, event-driven services, and performance-conscious "
-        "infrastructure. My work spans Java, Go, Python, distributed systems, and production platforms."
+        "Software Engineer building backend applications in Java, Spring Boot, Go, and Python. "
+        "Experienced with Kafka-based job execution, PostgreSQL-backed services, Flask dashboards, "
+        "and production infrastructure."
     ),
     "education": "B.Tech, Computer Science & Engineering",
     "college": "SGGS Institute of Engineering & Technology, Nanded",
@@ -74,27 +75,29 @@ PROJECTS = [
 
 EXPERIENCE = [
     {
-        "period": "JUN 2026 — PRESENT", "role": "Software Engineer (DevOps)",
+        "period": "JUN 2026 — PRESENT", "role": "Software Engineer",
         "company": "Algoquant Fintech Ltd", "location": "Bengaluru, India",
         "points": [
-            "Built internal Flask applications for Kubernetes job monitoring and server inventory, including REST endpoints, 30-second refresh, daily hardware audits, and Excel export.",
-            "Automated exchange contract database reconciliation with Python, SQL, and cron, saving roughly one hour of manual work daily.",
-            "Operate a 23-node bare-metal Kubernetes cluster with 1,590 CPU cores and approximately 10 TiB RAM, alongside OpenStack.",
-            "Implemented Layer-2 network access control with PacketFence, pfSense, LDAP, and RADIUS."
+            "Built a Flask Kubernetes dashboard used daily by 12–15 people to inspect CPU and memory usage, pod logs, events, status, job history, and namespace usage history.",
+            "Automated daily hardware audits across 150+ systems with Ansible and displayed inventory results in a Flask dashboard.",
+            "Built an MCX open-position dashboard that parses Bash script output into JSON for a web UI.",
+            "Built an NSE pre-open market dashboard that stores prices for 2,400+ equity and 400+ F&O instruments in PostgreSQL and graphs price history.",
+            "Automated reconciliation across 2–3 exchange contract databases with Python, SQL, and cron, saving roughly one hour daily.",
+            "Deployed and managed a production Kubernetes cluster with 23 bare-metal nodes, 1,590 CPU cores, and about 10 TiB RAM; also managed OpenStack infrastructure and monitoring."
         ]
     },
     {
         "period": "JAN 2026 — JUN 2026", "role": "DevOps Intern",
         "company": "Algoquant Fintech Ltd", "location": "Bengaluru, India",
-        "points": ["Supported enterprise monitoring, infrastructure automation, and Kubernetes/OpenStack administration."]
+        "points": ["Set up Wazuh, Observium, Greenbone, and OpenStack; load-tested RADIUS/pfSense login with Locust."]
     }
 ]
 
 SKILLS = {
-    "Languages": ["Java", "Go", "Python", "SQL"],
+    "Languages": ["Java", "Go", "Python"],
     "Backend & Messaging": ["Spring Boot", "REST APIs", "Apache Kafka", "Redis", "JWT", "OAuth 2.0"],
     "Databases": ["PostgreSQL", "MySQL", "Firebase"],
-    "Systems & Cloud": ["Linux", "Kubernetes", "OpenStack", "Docker", "Git", "TCP/IP"],
+    "Systems & Cloud": ["Linux", "Kubernetes", "OpenStack", "Docker", "Git"],
     "Computer Science": ["Data Structures & Algorithms", "System Design", "OOP", "DBMS", "Operating Systems", "Computer Networks"],
 }
 

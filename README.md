@@ -35,7 +35,7 @@ Open `app.py` and update:
 - `PROFILE`: email, phone, location, education, and profile details.
 - `EXPERIENCE`, `SKILLS`, and `ACHIEVEMENTS`: edit as needed.
 
-The résumé supplied for this portfolio did not include the actual URL values behind its LinkedIn, GitHub, or project links, so these are intentionally left as placeholders rather than guessed.
+The résumé lists profile and project links by name but does not include their URL values. Review the links in `app.py` and update them if any have changed.
 
 ## Production note
 `python app.py` runs Flask's development server. For production, use a WSGI server such as Gunicorn:
