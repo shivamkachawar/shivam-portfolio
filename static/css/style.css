@@ -17,3 +17,35 @@
 .contact-socials a{color:#c4c9d3}
 .contact-socials a:hover{color:var(--lime)}
 @media(max-width:650px){.name-heading{font-size:clamp(55px,15vw,76px);letter-spacing:-4px;margin-top:25px}.hero-tagline{font-size:22px;letter-spacing:-.7px}.social-links{gap:12px}.social-links a{font-size:8px}}
+
+/* Mobile layout refinements: keep controls and decorative elements inside the viewport. */
+@media(max-width:650px){
+  html,body{width:100%;max-width:100%;overflow-x:clip}
+  .topbar{padding-right:14px;padding-left:14px;gap:8px}
+  .wordmark{gap:8px;min-width:0}
+  .wordmark>span:last-child{font-size:8px;letter-spacing:.5px;white-space:nowrap}
+  .nav-cta{margin-right:4px;padding:8px 9px;white-space:nowrap}
+  .hero-copy,.about-copy,.section-heading,.timeline-content,.project-content>div{min-width:0}
+  .hero-actions>.hero-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);width:100%;gap:9px}
+  .hero-actions>.hero-actions .button{width:100%;min-width:0;min-height:46px;padding:11px 10px;gap:8px;justify-content:space-between}
+  .hero-actions>.hero-actions .button:last-child{grid-column:1/-1}
+  .hero-visual{max-width:100%}
+  .orbit,.float-chip{max-width:calc(100vw - 36px)}
+  .chip-top{right:0}
+  .chip-bottom{left:0}
+  .project-card,.skill-card,.contact-panel{min-width:0}
+  .project-links{gap:8px 16px}
+  .contact-bottom a,.contact-bottom>div>span:last-child{overflow-wrap:anywhere}
+}
+@media(max-width:380px){
+  .topbar{padding-right:12px;padding-left:12px}
+  .wordmark>span:last-child{font-size:7px;letter-spacing:.25px}
+  .nav-cta{padding:7px 7px;font-size:10px;margin-right:1px}
+  .hero-actions>.hero-actions{grid-template-columns:minmax(0,1fr)}
+  .hero-actions>.hero-actions .button:last-child{grid-column:auto}
+  .hero-actions>.hero-actions .button{justify-content:flex-start}
+  .hero-actions>.hero-actions .button span{margin-left:auto}
+  .hero-visual{margin-right:-12px;margin-left:-12px;transform:scale(.84)}
+  .achievement{grid-template-columns:82px minmax(0,1fr) 12px;gap:8px}
+  footer .wordmark{flex-basis:100%}
+}
